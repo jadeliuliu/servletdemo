@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件下载</title>
+</head>
+<body>
+    <!-- 浏览器能够识别的资源，点击展示 -->
+    <a href="download/TacoCloud.jpeg">图片文件</a>
+    <a href="download/Taco.java">文本文件</a>
+    <hr>
+    <!-- 加download点击下载,可不写属性名，表示文件名 -->
+    <a href="download/TacoCloud.jpeg" download="百度.jpeg">图片文件</a>
+    <a href="download/Taco.java" download="">文本文件</a>
+    <!-- 浏览器不能够识别的资源,自动下载 -->
+    <a href="">压缩文件</a>
+
+    <hr>
+    <form action="downloadServlet">
+        文件名：<input type="text" name="fileName" placeholder="请输入要下载的文件名">
+        <button>下载</button>
+    </form>
+</body>
+</html>
